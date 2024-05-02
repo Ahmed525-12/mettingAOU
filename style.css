@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+
+
+
 
 .bg-navbar {
     background: #373B44; /* fallback for old browsers */
@@ -9,7 +11,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Noto Naskh Arabic", serif;
     font-weight: 900 !important;
     font-style: normal;
     background-color: #fcfaf0;
@@ -39,8 +41,11 @@ html, body {
 }
 
 .img-nav {
-    height: 70px;
-    width: auto;
+   
+    width: 25%;
+    border-radius: 50%; /* Make the image circular */
+    background-color: white; /* Set the background color behind the image */
+    padding: 5px; 
 }
 
 .head-auth {
