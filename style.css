@@ -84,6 +84,7 @@ html, body {
     color: #262626;
     transition: 0.5s;
     z-index: 1;
+    font-weight: bold;
 }
 
     .alink:before {
