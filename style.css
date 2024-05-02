@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+
+.bg-navbar {
+    background: #373B44; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #285295, #373B44); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #285295, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal;
+    background-color: #fcfaf0;
+    overflow: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.min-header {
+    min-height: 90vh;
+}
+
+.footer {
+    position: relative !important;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.dir-navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-nav {
+    height: 70px;
+    width: auto;
+}
+
+.head-auth {
+    color: #FFDD00;
+    text-shadow: 1px 1px 1px #000;
+    font-size: large;
+    text-align: center;
+}
+
+.text-arabic {
+    text-align: right;
+    word-wrap: break-word; /* Ensure text wraps to next line if it overflows */
+}
+
+@media only screen and (max-width:768px) {
+    .dir-navbar {
+        justify-content: center;
+    }
+
+   
+
+    .head-auth {
+        color: #FFDD00;
+        text-shadow: 1px 1px 1px #000;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .text-arabic {
+        text-align: center; /* Center align text on small screens */
+    }
+}
+
+.alink {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+    .alink:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid #dfa126;
+        border-bottom: 2px solid #dfa126;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .alink:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #dfa126;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+
+    .alink:hover {
+        color: #fff !important;
+    }
+
+        .alink:hover:before {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+        .alink:hover:after {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+/* ---------------------------------------------------------------top button-------------------------------------- */
+.i_button_top {
+    display: inline-block;
+    color: #fff !important;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+
+.a_button_top {
+    display: none;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    z-index: 4500;
+    opacity: .5;
+}
+
+    .a_button_top:hover {
+        background: rgb(22, 22, 22);
+        opacity: .5;
+    }
+
+.i_button_top:hover {
+    color: #1388db !important;
+}
+
+.a_button_top.scrollh {
+    display: block;
+    transition: display 0.5s linear;
+}
+
+/* ----------------------------------------------------------------end top button--------------------------------- */
+.padding-fixed {
+    padding-top: 10pc;
+}
+
+.active {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+    .active:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid #0fb7ff;
+        border-bottom: 2px solid #0fb7ff;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .active:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0fb7ff;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+
+    .active:hover {
+        color: #fff !important;
+    }
+
+        .active:hover:before {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+        .active:hover:after {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+.img-footer {
+    max-width: 6%;
+    height: auto;
+}
+
+.h4-skills {
+    position: relative;
+    z-index: 2;
+}
+
+    .h4-skills::after {
+        content: '';
+        width: 50%;
+        height: 3px;
+        background: #f3c350;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+
+    .h4-skills::before {
+        content: '';
+        text-align: center;
+        width: 100%;
+        height: 3px;
+        background: #0065a7;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+
+.text-right {
+    text-align: right;
+    word-wrap: break-word; /* Ensure text wraps to next line if it overflows */
+}
+#iframeContainer {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Align content center */
+}
+iframe {
+    display: block; /* Make iframe a block element */
+    margin: auto; /* Center iframe horizontally */
+}
