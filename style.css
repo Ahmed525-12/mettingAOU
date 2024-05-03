@@ -42,7 +42,7 @@ html, body {
 
 .img-nav {
    
-    width: 105px;
+    width: 129px;
     
 }
 .img-head{
@@ -61,6 +61,11 @@ html, body {
 }
 
 @media only screen and (max-width:768px) {
+    .img-nav {
+   
+        width: 105px;
+        
+    }
     .dir-navbar {
         justify-content: center;
     }
@@ -284,3 +289,12 @@ iframe {
 .header-text{
     color: #deac39;
 }
+.font-head{
+    font-size: 53px;
+}
+.logo-container {
+    display: inline-block; /* Make the container inline */
+  }
+ .img-share{
+    padding-top: 67px;
+  }
