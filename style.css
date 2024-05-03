@@ -45,7 +45,9 @@ html, body {
     width: 105px;
     
 }
-
+.img-head{
+    width: 80%;
+}
 .head-auth {
     color: #FFDD00;
     text-shadow: 1px 1px 1px #000;
@@ -268,7 +270,7 @@ html, body {
 
 .text-right {
     text-align: right;
-    word-wrap: break-word; /* Ensure text wraps to next line if it overflows */
+    line-height: 1.5;
 }
 #iframeContainer {
     width: 80%; /* Adjust width as needed */
@@ -278,4 +280,7 @@ html, body {
 iframe {
     display: block; /* Make iframe a block element */
     margin: auto; /* Center iframe horizontally */
+}
+.header-text{
+    color: #deac39;
 }
