@@ -42,10 +42,8 @@ html, body {
 
 .img-nav {
    
-    width: 81px;
-    border-radius: 50%; /* Make the image circular */
-    background-color: white; /* Set the background color behind the image */
-    padding: 5px; 
+    width: 105px;
+    
 }
 
 .head-auth {
